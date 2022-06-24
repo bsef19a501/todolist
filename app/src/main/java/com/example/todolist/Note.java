@@ -8,9 +8,13 @@ public class Note {
     private String desc;
 
    @PrimaryKey(autoGenerate=true)
-     private String id;
+     private int id;
 
-    public String getId() {
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
         return id;
     }
 
