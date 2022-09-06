@@ -45,7 +45,7 @@ public class RVadapter extends ListAdapter<Note,RVadapter.ViewHolder> {
     public void onBindViewHolder(@NonNull @NotNull ViewHolder holder, int position) {
     Note note=getItem(position);
     holder.binding.titleRv.setText(note.getTitle());
-    holder.binding.textRv.setText(note.getTitle());
+    holder.binding.textRv.setText(note.getDesc());
     }
 public Note getNote(int position)
 {

@@ -12,6 +12,7 @@ public class Spactivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spactivity);
+        getSupportActionBar().hide();
         Handler handler=new Handler();
         handler.postDelayed(new Runnable() {
             @Override
